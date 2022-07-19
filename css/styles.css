@@ -38,7 +38,7 @@ p {
 
 .link {
   text-decoration: none;
-  }
+}
 
 .list {
   list-style: none;
@@ -121,6 +121,19 @@ p {
 
 .header-link-current {
   color: var(--accent-text-color);
+  position: relative;
+}
+
+.header-link-current::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: rgba(33, 150, 243, 1);
+  border-radius: 2px;
+
+  position: absolute;
+  bottom: 0;
 }
 
 .header-link:hover,
@@ -169,10 +182,9 @@ p {
 }
 
 .header-icon {
-margin-right: 10px;
-fill:  currentColor;
+  margin-right: 10px;
+  fill: currentColor;
 }
-
 
 /*Main page*/
 
@@ -290,6 +302,32 @@ fill:  currentColor;
   gap: 30px;
 }
 
+.occupation-img {
+  display: block;
+}
+
+.occupation-thumb {
+  position: relative;
+}
+
+.occupation-label {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+}
+
 /*Teem section*/
 
 .team-section {
@@ -335,7 +373,7 @@ fill:  currentColor;
   align-items: center;
   justify-content: center;
   gap: 22px;
-  }
+}
 
 .team-social-link {
   display: flex;
@@ -387,8 +425,7 @@ fill:  currentColor;
 }
 
 .clients-link:hover,
-.clients-link:focus
- {
+.clients-link:focus {
   color: var(--accent-text-color);
   border: 1px solid var(--accent-text-color);
 }
@@ -581,6 +618,24 @@ fill:  currentColor;
 
 .portfolio-item {
   flex-basis: calc((100% - 2 * 30) / 3);
+}
+
+.portfolio-thumb {
+  position: relative;
+}
+
+.portfolio-dsc {
+  position: absolute;
+  background-color: rgba(33, 150, 243, 0.9);
+  color: var(--white-text-color);
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  letter-spacing: 0.03em;
+
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 63px 24px;
 }
 
 .portfolio-img {

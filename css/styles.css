@@ -65,7 +65,11 @@ p {
   margin-bottom: 50px;
 }
 
-/*header*/
+/**
+|============================
+| Header
+|============================
+*/
 
 .header {
   background-color: var(rimery-bgc-color);
@@ -186,9 +190,17 @@ p {
   fill: currentColor;
 }
 
-/*Main page*/
+/**
+|============================
+| Main page
+|============================
+*/
 
-/*Неrо section*/
+/**
+|============================
+| Неrо section
+|============================
+*/
 
 .hero-section {
   background-color: var(--secondary-bgc-color);
@@ -244,7 +256,11 @@ p {
   background-color: #188ce8;
 }
 
-/*About section*/
+/**
+|============================
+| About section
+|============================
+*/
 
 .about-list {
   display: flex;
@@ -282,7 +298,11 @@ p {
   width: 270px;
 }
 
-/*Occupation section*/
+/**
+|============================
+| Occupation section
+|============================
+*/
 
 .occupation-section {
   padding-top: 0;
@@ -328,7 +348,11 @@ p {
   background: rgba(47, 48, 58, 0.8);
 }
 
-/*Teem section*/
+/**
+|============================
+| Teem section
+|============================
+*/
 
 .team-section {
   background-color: #f5f4fa;
@@ -396,7 +420,11 @@ p {
   fill: currentColor;
 }
 
-/*clients section*/
+/**
+|============================
+| Clients section
+|============================
+*/
 
 .clients-list {
   display: flex;
@@ -430,7 +458,11 @@ p {
   border: 1px solid var(--accent-text-color);
 }
 
-/*Footer*/
+/**
+|============================
+| Footer
+|============================
+*/
 
 .footer {
   background-color: var(--secondary-bgc-color);
@@ -532,7 +564,11 @@ p {
   fill: currentColor;
 }
 
-/*portfolio Page*/
+/**
+|============================
+| Portfolio Page
+|============================
+*/
 
 .filter-btn {
   font-weight: 500;
@@ -621,21 +657,26 @@ p {
 }
 
 .portfolio-thumb {
-  position: relative;
+   position: relative;
+   overflow: hidden;
 }
 
-.portfolio-dsc {
-  position: absolute;
+.overlay {
+ position: absolute;
+  
   background-color: rgba(33, 150, 243, 0.9);
-  color: var(--white-text-color);
-  font-size: 18px;
-  line-height: calc(28 / 18);
-  letter-spacing: 0.03em;
-
   top: 0;
   right: 0;
   height: 100%;
+  width: 100%;
   padding: 63px 24px;
+}
+
+.overlay-text {
+   color: var(--white-text-color);
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  letter-spacing: 0.03em;
 }
 
 .portfolio-img {

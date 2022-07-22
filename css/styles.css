@@ -685,7 +685,7 @@ p {
   display: block;
 }
 
- .portfolio-item {
+ .portfolio-overlay {
  position: relative;
   overflow: hidden;
   }

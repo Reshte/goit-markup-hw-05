@@ -9,7 +9,7 @@
   --primery-bgc-color: #ffffff;
   --secondary-bgc-color: #2f303a;
   /*other*/
-  --anim-hover:250ms cubic-bezier(0.4, 0, 0.2, 1)
+  --anim-hover: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Навешивать данное правило не нужно, так как его задает нормализатор стилей*/
@@ -675,15 +675,47 @@ p {
   transition: box-shadow var(--anim-hover);
 }
 
-.portfolio-img {
-  display: block;
-}
-
 .portfolio-item:hover,
 .portfolio-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+.portfolio-img {
+  display: block;
+}
+
+ .portfolio-item {
+ position: relative;
+  overflow: hidden;
+  }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  background-color: rgba(33, 150, 243, 0.9);;
+ 
+  transform: translateY(100%);
+  transition: transform 500ms ease-in;
+ 
+}
+
+.portfolio-link:hover .overlay {
+  transform: translateY(0);
+}
+
+.overlay-text{
+font-weight: 400;
+font-size: 18px;
+line-height: calc(28 / 18);
+letter-spacing: 0.03em;
+padding: 63px 24px;
+color: #FFFFFF;
+ user-select: none;
+} 
+
 
 .portfolio-wrapper {
   padding: 20px 24px;

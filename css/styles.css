@@ -586,6 +586,12 @@ p {
 */
 
 .filter-btn {
+  display: block;
+  max-width: 150px;
+  min-width: 25px;
+  min-height: 26px;
+  padding: 6px 22px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -600,13 +606,15 @@ p {
 
   border: none;
   border-radius: 4px;
-}
+
+  transition: color var(--anim-hover), background-color var(--anim-hover);
+  }
+
 
 .filter-active-btn {
   background-color: var(--accent-color);
   color: var(--white-text-color);
-
-  transition: color var(--anim-hover), background-color var(--anim-hover);
+  
 }
 
 .filter-btn:hover,
@@ -655,14 +663,6 @@ p {
   gap: 8px;
 }
 
-.filter-btn {
-  display: block;
-  max-width: 150px;
-  min-width: 25px;
-  min-height: 26px;
-  padding: 6px 22px;
- transition: box-shadow var(--anim-hover);
-}
 
 .portfolio-list {
   display: flex;
@@ -683,12 +683,13 @@ p {
 
 .portfolio-img {
   display: block;
+  margin-bottom: -2px;
 }
 
  .portfolio-overlay {
  position: relative;
   overflow: hidden;
-  }
+   }
 
 .overlay {
   position: absolute;

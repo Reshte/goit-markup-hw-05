@@ -27,6 +27,10 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /* reset styles*/
 
 h1,
@@ -416,7 +420,7 @@ p {
   border-radius: 50%;
   color: #afb1b8;
 
-  transition: background-color var(--anim-hover), color var(--anim-hover) ;
+  transition: background-color var(--anim-hover), color var(--anim-hover);
 }
 
 .team-social-link:hover,
@@ -456,7 +460,7 @@ p {
   justify-content: center;
   color: #afb1b8;
 
-  transition: color var(--anim-hover), border var(--anim-hover) ;
+  transition: color var(--anim-hover), border var(--anim-hover);
 }
 
 .clients-icon {
@@ -608,13 +612,11 @@ p {
   border-radius: 4px;
 
   transition: color var(--anim-hover), background-color var(--anim-hover);
-  }
-
+}
 
 .filter-active-btn {
   background-color: var(--accent-color);
   color: var(--white-text-color);
-  
 }
 
 .filter-btn:hover,
@@ -663,7 +665,6 @@ p {
   gap: 8px;
 }
 
-
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -686,37 +687,35 @@ p {
   margin-bottom: -2px;
 }
 
- .portfolio-overlay {
- position: relative;
+.portfolio-overlay {
+  position: relative;
   overflow: hidden;
-   }
+}
 
 .overlay {
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   width: 100%;
-  background-color: rgba(33, 150, 243, 0.9);;
- 
+  background-color: rgba(33, 150, 243, 0.9);
+
   transform: translateY(100%);
   transition: transform 500ms ease-in;
- 
 }
 
 .portfolio-link:hover .overlay {
   transform: translateY(0);
 }
 
-.overlay-text{
-font-weight: 400;
-font-size: 18px;
-line-height: calc(28 / 18);
-letter-spacing: 0.03em;
-padding: 63px 24px;
-color: #FFFFFF;
- user-select: none;
-} 
-
+.overlay-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  letter-spacing: 0.03em;
+  padding: 63px 24px;
+  color: #ffffff;
+  user-select: none;
+}
 
 .portfolio-wrapper {
   padding: 20px 24px;

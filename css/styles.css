@@ -403,7 +403,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 22px;
+  gap: 10px;
 }
 
 .team-social-link {
